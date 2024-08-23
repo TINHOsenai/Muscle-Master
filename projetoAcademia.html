@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Rotinas de Treino</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="master.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="projetoAcademia.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Gerador de Rotinas de Treino 💪</h1>
+        <div class="formulario">
+            <h3>Informe os músculos que deseja treinar</h3>
+            <div id="muscles">
+                <div class="muscle-row">
+                    <input type="text" class="muscle muscle-input" placeholder="Informe um músculo...">
+                    <button class="btn-danger" onclick="removeMuscle(this)" disabled>Excluir</button>
+                </div>
+                <div class="muscle-row">
+                    <input type="text" class="muscle muscle-input" placeholder="Informe um músculo...">
+                    <button class="btn-danger" onclick="removeMuscle(this)" disabled>Excluir</button>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="addMuscle()">Adicionar Músculo</button>
+            <button class="btn-success" onclick="submitForm()">Gerar Treino</button>
+        </div>
+        <div id="response" class="response"></div>
+    </div>
+    
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+        <div class="footer-info">
+            <p>&copy; 2024 Gerador de Rotinas de Treino. Todos os direitos reservados para Heverton Alvarenga.</p>
+        </div>
+    </footer>
+
+    <script src="./script1.js"></script>
+</body>
+</html>
